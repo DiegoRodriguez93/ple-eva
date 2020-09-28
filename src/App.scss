@@ -1,0 +1,191 @@
+
+@import "styles/base";
+
+.App {
+
+  background-color: #ffffff;
+  margin: 0.8rem;
+  border-left: 1px solid rgb(226, 226, 226);
+  border-right: 1px solid rgb(226, 226, 226);
+  border-bottom: 1px solid rgb(226, 226, 226);
+
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.69);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.69);
+  box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.69);
+/*   height: 95vh; */
+
+  &-header{
+    background-color:#cbd5da;
+    height: 80px;
+    &-logo{
+     max-width: 80px;
+    }
+    .step {
+/*       height: 15px;
+      width: 15px; */
+      padding: 12px 20px;
+      background-color: $fourth-color;
+      color: $white;
+      border: none;  
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .step-hr{
+      border: 2px solid $five-color;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .step-container{
+      width: 100%;
+      max-width: 35%;
+    }
+  }
+
+  &-main{
+
+      &-title{
+
+        h1{
+          font-size:1.4em
+        }
+
+        .title-hr{
+          border-top: 2px solid #00c3dd;
+          border-radius: 5px;
+          width: 15%;
+          margin:0;
+        }
+    
+      }
+
+      &-description{
+        display: contents;
+        justify-content: space-between;
+
+        .col{
+          width: 50%;
+          padding:3%; 
+          img{
+            display: block;
+            width: 100%;
+            margin:auto;
+            box-sizing: border-box;
+            max-width: 280px;
+          }
+        }
+      }
+
+    padding: 1rem 4rem;
+    h3{
+      color: $primary-color;
+    }
+    p{
+      color: $secondary-color;
+    }
+    .bye-bye{
+      margin: 4rem 0 0;
+      text-align: center;
+      background: $terciary-color;
+      border: 1px solid #ddd;
+      color: #ababab;
+      padding: 1rem;
+      border-radius: 4px;
+    }
+  }
+
+  &-footer{
+    
+    display: flex; 
+    justify-content: space-between;
+    padding: 15px 49px;
+    border-top: 1px solid $border-color;
+
+    button{
+      font-size: 14px;
+      border: 0;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      height: 44px;
+      line-height: 44px;
+      min-width: initial;
+      opacity: 1;
+      outline: none;
+      padding: 0 15px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      }
+
+    .button-next{
+      background-color: $fourth-color;
+    }
+
+  }
+
+
+@media (max-width: 1199.98px) {
+  .container{    
+  margin-right: 9%;
+  margin-left: 9%;
+  width: 95%!important;
+}
+} 
+@media (max-width: 991.98px) { 
+  .container{    
+    margin-right: 9%;
+    margin-left: 9%;
+    width: 80%!important;
+  }
+}
+
+@media (max-width: 767.98px) {   
+  .container{    
+  margin-right: 0%;
+  margin-left: 0%;
+  width:100%!important;
+  &-fotter{
+    padding:0;
+  }
+} 
+.App-main-description{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.col{
+  width:100%;
+}
+}
+
+  @media (max-width: 575.98px) {   
+
+    .container{    
+      margin-right: 0%;
+      margin-left: 0%;
+      width:100%!important;
+      &-fotter{
+        padding:0px;
+      }
+    } 
+  
+    .step-container{
+      max-width: 75%;
+    }
+    .App-main-description{
+      display: block;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .col{
+      width:100%;
+    }
+  }
+
+
+
+
+
+
+}
