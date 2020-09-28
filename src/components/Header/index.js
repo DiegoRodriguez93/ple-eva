@@ -1,8 +1,24 @@
 import React from 'react';
 
-export default function Header() {
+export function getComponent(path) {
+    switch (path) {
+        case '/':
+            return 'step1';
+        case '/step2':
+            return 'step2';
+        case '/result':
+            return 'step2';
+        default:
+            return 'step1'
+    }
+}
 
-/*     const changeLanguage = (lng) => i18n.changeLanguage(lng); */
+export default function Header(props) {
+
+    let { path } = props;
+    console.log('props ' + getComponent(path));
+
+    /*     const changeLanguage = (lng) => i18n.changeLanguage(lng); */
 
     return (
         <div className="App-header center-items">
@@ -13,9 +29,9 @@ export default function Header() {
 <button onClick={() => changeLanguage("fr")}>fr</button> */}
 
             <div className="step-container center-items">
-                <span className="step">1</span>
+                <span style={path === '/' ? {backgroundColor:'Black'} : {} } className="step">1</span>
                 <hr className="step-hr" />
-                <span className="step">2</span>
+                <span style={path === '/step2' ? {backgroundColor:'Black'} : {} } className="step">2</span>
                 <hr className="step-hr" />
                 <span className="step">3</span>
             </div>

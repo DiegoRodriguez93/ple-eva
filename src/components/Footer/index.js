@@ -1,8 +1,11 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 
 import Swal from 'sweetalert2';
 
 export default function Footer(){
+
+    let history = useHistory();
 
     const handleNext = () => {
         Swal.fire({
@@ -20,7 +23,7 @@ export default function Footer(){
         }).then(function (result) {
             if (result.value) {
                 // Swal.fire({icon: 'success', text: 'You have a bike!'});
-
+                history.push("/step2");
 
             } else if (result.value === 0) {
                 // Swal.fire({icon: 'error', text: "You don't have a bike :("});
