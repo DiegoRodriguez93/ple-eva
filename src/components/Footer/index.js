@@ -1,10 +1,10 @@
 import React from 'react';
-import { useLocation, useHistory } from 'react-router-dom';
+//import { useLocation, useHistory } from 'react-router-dom';
 import  NextStep1 from './NextStep1';
 
 export default function Footer() {
 
-    let history = useHistory();
+    //let history = useHistory();
 
     return (
         <div className="section-footer">

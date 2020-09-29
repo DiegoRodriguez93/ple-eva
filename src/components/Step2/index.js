@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useForm } from "react-hook-form";
 
 
@@ -59,7 +59,7 @@ export default function Step2() {
                 <label>Crea tu pista para recordar tu contraña (Opcional)</label>
                     <input 
                     type="text" 
-                    type="pista" 
+                    name="pista" 
                     className="input-master-forget-clue"
                     placeholder=""
                     ref={register()}/>
