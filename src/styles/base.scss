@@ -23,7 +23,7 @@ $border-color: rgb(226, 226, 226);
     justify-content: center;
 }
 
-.container{ 
+/* .container{ 
     width: 80%; 
     margin-right: 15%;
     margin-left: 15%;
@@ -33,9 +33,72 @@ $border-color: rgb(226, 226, 226);
         justify-content: space-between;
         .right{justify-content: flex-end}
     }
+} */
+
+.section-footer{
+    border-top: 2px solid $border-color;
+    padding-top: 15px;
+    padding-bottom: 15px;
+/*     width: 100%; */
+    display: flex; 
+    justify-content: space-between;
+    .right{justify-content: flex-end}
+
+    button{
+        font-size: 14px;
+        border: 0;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        height: 44px;
+        line-height: 44px;
+        min-width: initial;
+        opacity: 1;
+        outline: none;
+        padding: 0 15px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        }
 }
 
-.container-info{
+.section-info{
     display: block;
 }
 
+input{
+
+    display: block;
+    font-size: 14px;
+    border: 1px solid #ccd5da;
+    border-radius: 2px;
+    color: #002b45;
+    line-height: normal;
+    outline: none;
+    padding: 8px;
+/*     .input-master-password{
+
+    } */
+
+}
+
+label {
+    margin-bottom:30px;
+}
+
+
+.row{
+    margin: 0!important;
+}
+
+.input-master-forget-clue{
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.error-input{
+    color: red;
+    font-weight: bold;
+    width:60%;
+}
